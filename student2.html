@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Notice Board</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="header">
+    <h2 agline="center">VIDYAVARDHAKA COLLEGE OF ENGINEERING</h2>
+        <img src="https://tse2.mm.bing.net/th/id/OIP.Tn_nkSOwZwgs65D9o6a1oQHaHe?pid=Api&P=0&h=180" class="logo">
+
+</div>
+
+
+  <!-- Login Section -->
+  <div id="loginSection" class="container">
+    <h1 style="color:#0f172a" id="login">Login</h1>
+    
+    <!-- Role Selection -->
+    <label for="roleSelect" style="font-size: 20px;">Select Role:</label><br>
+    <select id="roleSelect">
+      <option value="student">Student</option>
+      <option value="admin">Admin</option>
+    </select><br><br>
+    
+    <!-- Username -->
+    <label for="username" style="font-size: 20px;">Username:</label><br>
+    <input type="text" id="username" placeholder="Enter username"><br><br>
+    
+    <!-- Password -->
+    <label for="password" style="font-size: 20px;">Password:</label><br>
+    <input type="password" id="password" placeholder="Enter password"><br><br>
+    
+    <!-- Login Button -->
+    <button onclick="login()" id="btn">Login</button>
+  </div>
+
+  <!-- Student Section -->
+  <div id="studentSection" class="container hidden">
+    <h2 id="studentnoticeboard">Student Notice Board</h2>
+    <label>Select Department:</label>
+    <select id="filterBranch" onchange="displayNotices()">
+      <option value="All">All</option>
+      <option value="CSE">CSE</option>
+      <option value="MCA">MCA</option>
+      <option value="ECE">ECE</option>
+    </select>
+    <div id="noticeBoard"></div>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <!-- Admin Section -->
+  <!-- Admin Section -->
+<div id="adminSection" class="container hidden">
+  <h2 id="adminpanel">Admin Panel</h2>
+  <input type="text" id="noticeText" placeholder="Enter notice">
+  <select id="noticeDept">
+    <option value="CSE">CSE</option>
+    <option value="MCA">MCA</option>
+    <option value="ECE">ECE</option>
+  </select>
+  <button onclick="addNotice()">Add Notice</button><br>
+  
+  <!-- Filter for Admin -->
+  <label>Filter Notices:</label>
+  <select id="adminFilterBranch" onchange="displayAdminNotices()">
+    <option value="All">All</option>
+    <option value="CSE">CSE</option>
+    <option value="MCA">MCA</option>
+    <option value="ECE">ECE</option>
+  </select>
+  
+  <div id="adminNoticeBoard"></div>
+  <button onclick="logout()">Logout</button>
+</div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

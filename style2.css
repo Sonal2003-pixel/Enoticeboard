@@ -1,0 +1,147 @@
+body {
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  height:100vh;
+  background-color: lightblue;
+
+
+}
+
+.container {
+  background: grey;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  
+}
+
+.hidden {
+  display: none;
+  font-size: 80px;
+}
+
+.notice {
+  background: rgba(255,255,255,0.2);
+  padding: 40px;
+  margin: 40px ;
+  border-radius: 5px;
+  
+}
+.notice button {
+  margin-left: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+#roleSelect{
+ font-size: 30px;
+}
+
+#noticeText{
+ font-size: 30px;
+
+}
+#username{
+  height: 30px;
+}
+#password{
+  height: 30px;
+}
+#btn{
+  height: 40px;
+}
+#header{
+        
+        width:1450px;
+        background-color: purple;
+        color: beige;
+        padding: 20px;
+        font-size: 80px;
+        border: 2px solid black;
+        
+    }
+    .header {
+    background-color: purple;
+    padding: 15px;
+    display: flex;
+    align-items: center;   /* vertically center */
+  animation: slideFade 2s ease-in-out;
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    
+}
+
+.logo {
+    width: 80px;          
+    height: auto;
+    margin-right: px;   
+    position: relative;
+    left:260px;
+    border-radius: 40%;
+}
+
+.header h2{
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+    left:200px;
+}
+
+#login {
+  animation: slideFade 1.5s ease-in-out;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#studentnoticeboard{
+  animation: slideFade 1.5s ease-in-out;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#adminpanel{
+  animation: slideFade 1.5s ease-in-out;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
